@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppermen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="checkSupport()">
+    <button class="tablink" onclick="openPage('supermen',this,'green')" id="defaultOpen">SUPERMEN</button>
+    <button class="tablink" onclick="openPage('chamcong', this, 'green')">CHẤM CÔNG</button>
+    <button class="tablink" onclick="openPage('duan', this, 'green')">DỰ ÁN - TIẾN ĐỘ</button>
+    <button class="tablink" onclick="openPage('khenthuong', this, 'orange')">KHEN THƯỞNG - KỸ LUẬT - VI PHẠM</button>
+    <div id="supermen" class="tabcontent">
+        <h2>Supermen</h2>
+        <div id="myDIV" class="header">
+            <h3>CÔNG VIỆC CẦN GIẢI QUYẾT</h3>
+            <input type="text" id="myInput" placeholder="Title...">
+            <button onclick="newElement()" class="addBtn" type="submit">Add</button>
+            <!-- <span onclick="newElement()" class="addBtn">Add</span> -->
+        </div>
+        <ul id="myUL">
+        </ul>
+
+    </div>
+    <div id="chamcong" class="tabcontent">
+        <h3>cham cong</h3>
+        <p>Some news this fine day!</p> 
+    </div>
+    <div id="duan" class="tabcontent">
+        <h3>Dự Án</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+    <div id="khenthuong" class="tabcontent">
+        <h3>KT-KL</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
